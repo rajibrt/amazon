@@ -1,11 +1,8 @@
-import React from 'react'
+import { HomeCarousel } from '@/components/sharred/home/home-carousel'
+import data from '@/lib/data'
 
 const page = () => {
-  return (
-    <div>
-      <div className='h1-bold text-center p-10'>Home Page Content</div>
-    </div>
-  )
+  return <HomeCarousel items={data.carousels} />
 }
 
 export default page
